@@ -50,7 +50,7 @@ questions (){
   done
   while [ "x$mysql_pass" == "x" ]
   do
-    mysql_pass=$(whiptail --title "MySQL Root Password" --backtitle "$back_title" --inputbox "Please specify a MySQL Root Password" --nocancel 10 50 3>&1 1>&2 2>&3)
+    mysql_pass=$(whiptail --title "MySQL Root Password" --backtitle "$back_title" --passwordbox "Please specify a MySQL Root Password" --nocancel 10 50 3>&1 1>&2 2>&3)
   done
   if (whiptail --title "Install Quota" --backtitle "$back_title" --yesno "Setup User Quotas?" 10 50) then
     quota=Yes
