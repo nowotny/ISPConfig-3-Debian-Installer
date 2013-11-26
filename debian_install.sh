@@ -99,7 +99,7 @@ wget http://www.dotdeb.org/dotdeb.gpg
 cat dotdeb.gpg | apt-key add -
 apt-get update
 apt-get -y upgrade
-apt-get -y install vim-nox dnsutils unzip 
+apt-get -y install dnsutils unzip 
 
 } #end function debian_install_basic
 
